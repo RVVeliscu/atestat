@@ -18,6 +18,7 @@ int numar_filme, k, id, nr_act, idf, ida;
 
 int gaseste_in_graf(string);
 void leaga(int, int);
+void bfs(int);
 
 int main()
 {
@@ -41,9 +42,7 @@ int main()
 		}
 
 	}
-	
-
-
+	g << k;
 	return 0;
 }
 
@@ -53,18 +52,20 @@ int gaseste_in_graf(string nume)
 	it = indici.find(nume);
 	if (it == indici.end())
 	{
-		indici.insert(make_pair(nume, ++k));
+		indici.insert(it, pair<string, int>(nume, ++k));
+		//indici[nume] = ++k;
 		id = k;
 	}
 	else
 	{
 		id = it->second;
+		g << nume << '\n';
 	}
 	return id;
 }
 
 void leaga(int ida, int idf)
 {
-	graf[ida].insert(graf->end(), idf);
-	graf[idf].insert(graf->end(), ida);
+	graf[ida].insert( graf[ida].end(), idf);
+	graf[idf].insert(graf[idf].end(), ida);
 }
