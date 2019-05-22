@@ -119,6 +119,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="date.in" />
+    <None Include="date.out" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="querry.in" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

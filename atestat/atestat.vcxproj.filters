@@ -23,5 +23,13 @@
     <None Include="date.in">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="date.out">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="querry.in">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
