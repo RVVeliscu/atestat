@@ -22,7 +22,7 @@ map <string, int> indici;
 map <string, int>::iterator it;
 
 vector <int> graf[1000];
-vector <drum> viz;
+vector <drum> viz; //aici e problema fa l normal
 
 queue <int> c;
 
